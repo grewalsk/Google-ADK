@@ -1,4 +1,4 @@
-import os 
+import os
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -41,5 +41,36 @@ def sign_pss_text(private_key: rsa.RSAPrivateKey, text: str) -> str:
         return base64.b64encode(signature).decode('utf-8')
     except InvalidSignature as e:
         raise ValueError("RSA sign PSS failed") from e
-    
-    
+
+
+import requests
+import json
+
+def export_kalshi_events_to_json(filename="kalshi_events.json"):
+    """Fetch Kalshi events and export to JSON file"""
+    url = "https://api.elections.kalshi.com/trade-api/v2/events?limit=200&status=open"
+    headers = {"accept": "application/json"}
+
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()  # Raise an exception for bad status codes
+
+        data = response.json()
+
+        # Write to JSON file
+        with open(filename, 'w') as outfile:
+            json.dump(data, outfile, indent=2, sort_keys=False)
+
+        print(f"Successfully exported {len(data.get('events', []))} events to {filename}")
+        return data
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching data: {e}")
+        return None
+    except json.JSONDecodeError as e:
+        print(f"Error parsing JSON: {e}")
+        return None
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        return None
+export_kalshi_events_to_json()
