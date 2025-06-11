@@ -1,10 +1,20 @@
-from py_clob_client.clob_types import TradeParams
+import httpx
 
-resp = client.get_trades(
-    TradeParams(
-        maker_address=client.get_address(),
-        market="0xbd31dc8a20211944f6b70f31557f1001557b59905b7738480ca09bd4532f84af",
-    ),
-)
-print(resp)
-print("Done!")
+gamma_markets_endpoint = "https://gamma-api.polymarket.com/markets"
+market_id = "507868"  # Example market ID
+
+# Construct the URL for the specific market
+url = f"{gamma_markets_endpoint}/{market_id}"
+
+print(f"Fetching data for market ID: {market_id}...")
+response = httpx.get(url)
+
+if response.status_code == 200:
+    market_data = response.json()
+    print("\n--- Market Details ---")
+    print("Question:", market_data['question'])
+    print("Outcomes:", market_data['outcomes'])
+    print("Volume:", market_data['volume'])
+    print("----------------------")
+else:
+    print(f"Error: Received status code {response.status_code}")
