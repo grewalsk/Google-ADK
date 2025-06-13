@@ -1,6 +1,8 @@
 import json 
 import httpx
 
+# Use events grabber in all cases. 
+
 
 # The base URL for the Polymarket Gamma API
 gamma_markets_endpoint = "https://gamma-api.polymarket.com/markets"

@@ -4,23 +4,22 @@ import json
 gamma_events_endpoint = "https://gamma-api.polymarket.com/events"
 event_limit = 100
 
+# To implement 1000 events grabbing. 
+
 print(f"Fetching the latest {event_limit} events from Polymarket...")
 
 try:
-    
     params = {
         "active": "true",
         "closed": "false",
         "archived": "false",
-        "limit": event_limit,
+        "limit": 100,
+        "offset": 0,
     }
 
     response = httpx.get(gamma_events_endpoint, params=params, timeout=30.0)
-    
     response.raise_for_status()
-    
     limited_events = response.json()
-
     print(f"\nSuccessfully fetched {len(limited_events)} events.")
 
     # --- Output to JSON ---

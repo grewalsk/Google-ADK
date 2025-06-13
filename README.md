@@ -7,4 +7,4 @@ https://developers.google.com/maps/documentation/geocoding/start
 https://colab.research.google.com/github/google/earthengine-community/blob/master/tutorials/intro-to-python-api/index.ipynb#scrollTo=ZYiYem8wLSTX
 
 
-WE ARE NOT ILLEGALS!
+Run eventsorter.py to get the json file sorted of your choice.
