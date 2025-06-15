@@ -7,3 +7,29 @@ NewsCollectorAgent = LlmAgent(
     instruction = "",
     tools = [],
 )
+
+#systemInstructions: only for 2.0 later models.
+
+
+#multishot vs zeroshot
+
+# Essential parts of a prompt:
+
+##Objective, what you want the model to achieve. Be specific about your mission or goal. 
+## Step by step instructions on how to perform the task at hand. 
+
+##Instructions, step by step on how the prompt should accomplish its goals. 
+
+# Optional parts of a prompt:
+
+
+##Persona: Role/ vision ykwim. 
+##Constraints: on what the model can or cannot do.
+##Tone 
+##Context: obvious
+##Few shot
+##Reasoning steps, formatting response in a format. 
+## Recap, recapping key instructions. -> Constraints + response format. 
+##Safeguards against prompt injection. 
+
+
