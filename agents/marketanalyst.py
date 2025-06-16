@@ -8,6 +8,8 @@ NewsCollectorAgent = LlmAgent(
     tools = [],
 )
 
+
+
 #systemInstructions: only for 2.0 later models.
 
 
@@ -16,7 +18,8 @@ NewsCollectorAgent = LlmAgent(
 # Essential parts of a prompt:
 
 ##Objective, what you want the model to achieve. Be specific about your mission or goal. 
-## Step by step instructions on how to perform the task at hand. 
+## Step by step instructions on how to perform the task at hand.  
+##Can combine with persona.
 
 ##Instructions, step by step on how the prompt should accomplish its goals. 
 

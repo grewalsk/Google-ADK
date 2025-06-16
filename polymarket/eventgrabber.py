@@ -26,7 +26,7 @@ try:
 
     final_json_output = json.dumps(limited_events, indent=2)
 
-    output_filename = "100_events.json"
+    output_filename = "events.json"
 
     with open(output_filename, 'w', encoding='utf-8') as f:
         f.write(final_json_output)
