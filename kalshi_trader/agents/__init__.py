@@ -1,0 +1,1 @@
+"""Specialized agents for the Kalshi trading system.""" 
