@@ -2,6 +2,7 @@ import requests
 from dotenv import load_dotenv
 import os
 import json
+from bs4 import BeautifulSoup
 
 load_dotenv()
 
@@ -12,12 +13,18 @@ NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 with open (INPUT_FILENAME, 'r', encoding = 'utf-8') as f:
     selected_market = json.load(f)
 
+
+# Might have to use paignation. 
+
 def get_news_articles():
     """
-    Searches for news articles on the given market. Use this to find any recent information on the topic.
+    Searches for recent news articles related to a specific market question.
+    Only use this tool to gather raw, unfiltered news articles.
     """
 
     market_question = selected_market['question']
+
+    print(f"Tool 'fetch_news_for_market' called with question: '{market_question}'")
 
     news_api_url = "https://api.thenewsapi.com/v1/news/top"
 
@@ -52,9 +59,49 @@ def get_news_articles():
     except Exception as e:
         return {"error": "An unknown error occurred", "details": str(e)}
 
-news_articles = get_news_articles()
+def scrape_and_assess_news_impact(news_articles_json, market_question):
+    """
+    Scrapes the full text from article URLs, then analyzes the article content to create a summary
+    and assess the likely impact on a specific question about a Polymarket market.
 
-print(news_articles)
+    Use this AFTER fetching news articles with the get_news_articles tool.
+
+    
+    Args:
+        news_articles_json: The JSON object containing a list of news articles with URLs.
+        market_question: The full question text from the Kalshi market for context.
+    """
+
+    print(f"Tool 'scrape_and_assess_news_impact' called for question: '{market_question}'")
+
+    article_data = news_articles_json['data']
+    if not article_data:
+        return "No articles found in the provided JSON. Cannot perform analysis."
+    
+    context_block = ""
+
+    for i, article in enumerate(article_data):
+        url = article["url"]
+        if not url:
+            continue
+        
+        print(f"Scraping URL: {url}")
+
+        try: 
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+            }
+            page_response = requests.get(url, headers=headers, timeout=10)
+            page_response.raise_for_status()
+
+            soup = BeautifulSoup(page_response.content, "html.parser")
+
+            article_body = soup.find('article') or soup.find('main')
+
+        except Exception as e: 
+
+
+
 
 
     

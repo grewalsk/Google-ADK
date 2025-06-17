@@ -18,6 +18,7 @@ params = {
     "limit": limit,
     "offset": offset,
 }
+
 print("Fetching all active markets...")
 
 response = httpx.get(gamma_markets_endpoint, params=params)
