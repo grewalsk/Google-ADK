@@ -1,0 +1,446 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Pacers NBA 2025",
+        "totalResults": "65400000",
+        "searchTerms": "Pacers NBA 2025",
+        "count": 5,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "03103e08d36964a15",
+        "sort": "date",
+        "dateRestrict": "2024-09-24T17:33:33.315Z"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Pacers NBA 2025",
+        "totalResults": "65400000",
+        "searchTerms": "Pacers NBA 2025",
+        "count": 5,
+        "startIndex": 6,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "03103e08d36964a15",
+        "sort": "date",
+        "dateRestrict": "2024-09-24T17:33:33.315Z"
+      }
+    ]
+  },
+  "context": {
+    "title": "Polymarket infograbber."
+  },
+  "searchInformation": {
+    "searchTime": 0.23207,
+    "formattedSearchTime": "0.23",
+    "totalResults": "65400000",
+    "formattedTotalResults": "65,400,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Indiana Pacers Scores, Stats and Highlights - ESPN",
+      "htmlTitle": "<b>Indiana Pacers</b> Scores, Stats and Highlights - ESPN",
+      "link": "https://www.espn.com/nba/team/_/name/ind/indiana-pacers",
+      "displayLink": "www.espn.com",
+      "snippet": "1 day ago ... Hour 3: Showtime Sale \u00b7 Hour 2: Revenge of the Ravens \u00b7 Hour 2: Generational Hater \u00b7 Pacers \u00b7 Hour 3: Cheap Shots \u00b7 Hour 1: Panthers in Paradise Again \u00b7 NBA Finals\u00a0...",
+      "htmlSnippet": "1 day ago <b>...</b> Hour 3: Showtime Sale &middot; Hour 2: Revenge of the Ravens &middot; Hour 2: Generational Hater &middot; <b>Pacers</b> &middot; Hour 3: Cheap Shots &middot; Hour 1: Panthers in Paradise Again &middot; <b>NBA</b> Finals&nbsp;...",
+      "formattedUrl": "https://www.espn.com/nba/team/_/name/ind/indiana-pacers",
+      "htmlFormattedUrl": "https://www.espn.com/<b>nba</b>/team/_/name/ind/indiana-<b>pacers</b>",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTUv4fmqpaJMAc5w8V-i7KFXS4istPQgBugmKprxPxx5aCUoy2EoqgSeoZ&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ind.png",
+            "twitter:app:id:googleplay": "com.espn.score_center",
+            "og:image:width": "500",
+            "og:type": "website",
+            "twitter:title": "Indiana Pacers Scores, Stats and Highlights - ESPN",
+            "twitter:card": "summary",
+            "og:site_name": "ESPN",
+            "twitter:url": "https://www.espn.com/nba/team/_/name/ind/indiana-pacers",
+            "og:title": "Indiana Pacers Scores, Stats and Highlights - ESPN",
+            "og:image:height": "500",
+            "twitter:app:name:googleplay": "ESPN",
+            "medium": "website",
+            "twitter:app:id:iphone": "317469184",
+            "title": "Indiana Pacers Scores, Stats and Highlights - ESPN",
+            "og:description": "Visit ESPN for Indiana Pacers live scores, video highlights, and latest news. Find standings and the full 2024-25 season schedule.",
+            "twitter:image": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ind.png",
+            "fb:app_id": "116656161708917",
+            "twitter:site": "espn",
+            "viewport": "initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+            "twitter:description": "Visit ESPN for Indiana Pacers live scores, video highlights, and latest news. Find standings and the full 2024-25 season schedule.",
+            "og:locale": "en_US",
+            "og:url": "https://www.espn.com/nba/team/_/name/ind/indiana-pacers",
+            "twitter:app:name:iphone": "ESPN"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ind.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Indiana Pacers NBA Finals Media Availability | June 18, 2025 ...",
+      "htmlTitle": "<b>Indiana Pacers NBA</b> Finals Media Availability | June 18, <b>2025</b> ...",
+      "link": "https://www.youtube.com/watch?v=TZfcdMGhu80",
+      "displayLink": "www.youtube.com",
+      "snippet": "10 hours ago ... Tyrese Haliburton, Pascal Siakam, Rick Carlisle, Myles Turner, T.J. McConnell, Bennedict Mathurin, Aaron Nesmith, Andrew Nembhard and Obi\u00a0...",
+      "htmlSnippet": "10 hours ago <b>...</b> Tyrese Haliburton, Pascal Siakam, Rick Carlisle, Myles Turner, T.J. McConnell, Bennedict Mathurin, Aaron Nesmith, Andrew Nembhard and Obi&nbsp;...",
+      "formattedUrl": "https://www.youtube.com/watch?v=TZfcdMGhu80",
+      "htmlFormattedUrl": "https://www.youtube.com/watch?v=TZfcdMGhu80",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqJS22Tj-w6UbyVdJs4BvUZo2PTi46MU9Yv8VdoZ5s3a6bR9xMMOAiPyU&s=0",
+            "width": "139",
+            "height": "78"
+          }
+        ],
+        "imageobject": [
+          {
+            "width": "1280",
+            "url": "https://i.ytimg.com/vi/TZfcdMGhu80/maxresdefault.jpg",
+            "height": "720"
+          }
+        ],
+        "person": [
+          {
+            "name": "Indiana Pacers",
+            "url": "http://www.youtube.com/@pacers"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "userinteractioncount": "110",
+            "interactiontype": "https://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2122",
+            "interactiontype": "https://schema.org/WatchAction"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=544007664, app-argument=https://m.youtube.com/watch?v=TZfcdMGhu80&referring_app=com.apple.mobilesafari-smartbanner, affiliate-data=ct=smart_app_banner_polymer&pt=9008",
+            "og:image": "https://i.ytimg.com/vi/TZfcdMGhu80/maxresdefault.jpg",
+            "twitter:app:url:iphone": "vnd.youtube://m.youtube.com/watch?v=TZfcdMGhu80&feature=applinks",
+            "twitter:app:id:googleplay": "com.google.android.youtube",
+            "theme-color": "rgba(0, 0, 0, 0)",
+            "og:image:width": "1280",
+            "twitter:card": "player",
+            "og:site_name": "YouTube",
+            "twitter:url": "https://www.youtube.com/watch?v=TZfcdMGhu80",
+            "twitter:app:url:ipad": "vnd.youtube://m.youtube.com/watch?v=TZfcdMGhu80&feature=applinks",
+            "al:android:package": "com.google.android.youtube",
+            "twitter:app:name:googleplay": "YouTube",
+            "title": "Indiana Pacers NBA Finals Media Availability | June 18, 2025",
+            "al:ios:url": "vnd.youtube://m.youtube.com/watch?v=TZfcdMGhu80&feature=applinks",
+            "twitter:app:id:iphone": "544007664",
+            "og:description": "Tyrese Haliburton, Pascal Siakam, Rick Carlisle, Myles Turner, T.J. McConnell, Bennedict Mathurin, Aaron Nesmith, Andrew Nembhard and Obi Toppin spoke with the media after practice on Wednesday.\n\n0:00 - Tyrese Haliburton\n4:27 - Pascal Siakam\n6:42 - Rick Carlisle\n15:25 - Myles Turner\n19:28 - T.J. McConnell\n26:33 - Bennedict Mathurin\n33:09 - Aaron Nesmith\n38:01 - Andrew Nembhard\n43:57 - Obi Toppin",
+            "al:ios:app_store_id": "544007664",
+            "twitter:image": "https://i.ytimg.com/vi/TZfcdMGhu80/maxresdefault.jpg",
+            "twitter:player": "https://www.youtube.com/embed/TZfcdMGhu80",
+            "twitter:player:height": "720",
+            "twitter:site": "@youtube",
+            "og:video:type": "text/html",
+            "og:video:height": "720",
+            "og:video:url": "https://www.youtube.com/embed/TZfcdMGhu80",
+            "og:type": "video.other",
+            "twitter:title": "Indiana Pacers NBA Finals Media Availability | June 18, 2025",
+            "al:ios:app_name": "YouTube",
+            "og:title": "Indiana Pacers NBA Finals Media Availability | June 18, 2025",
+            "og:image:height": "720",
+            "twitter:app:id:ipad": "544007664",
+            "al:web:url": "http://m.youtube.com/watch?v=TZfcdMGhu80&feature=applinks",
+            "og:video:secure_url": "https://www.youtube.com/embed/TZfcdMGhu80",
+            "og:video:tag": "pacers",
+            "og:video:width": "1280",
+            "al:android:url": "vnd.youtube://m.youtube.com/watch?v=TZfcdMGhu80&feature=applinks",
+            "fb:app_id": "87741124305",
+            "twitter:app:url:googleplay": "https://www.youtube.com/watch?v=TZfcdMGhu80",
+            "twitter:app:name:ipad": "YouTube",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,",
+            "twitter:description": "Tyrese Haliburton, Pascal Siakam, Rick Carlisle, Myles Turner, T.J. McConnell, Bennedict Mathurin, Aaron Nesmith, Andrew Nembhard and Obi Toppin spoke with the media after practice on Wednesday.\n\n0:00 - Tyrese Haliburton\n4:27 - Pascal Siakam\n6:42 - Rick Carlisle\n15:25 - Myles Turner\n19:28 - T.J. McConnell\n26:33 - Bennedict Mathurin\n33:09 - Aaron Nesmith\n38:01 - Andrew Nembhard\n43:57 - Obi Toppin",
+            "og:url": "https://www.youtube.com/watch?v=TZfcdMGhu80",
+            "twitter:player:width": "1280",
+            "al:android:app_name": "YouTube",
+            "twitter:app:name:iphone": "YouTube"
+          }
+        ],
+        "videoobject": [
+          {
+            "identifier": "TZfcdMGhu80",
+            "embedurl": "https://www.youtube.com/embed/TZfcdMGhu80",
+            "playertype": "HTML5 Flash",
+            "isfamilyfriendly": "true",
+            "keywords": "pacers,nba,basketball,indiana pacers",
+            "uploaddate": "2025-06-18T11:05:28-07:00",
+            "requiressubscription": "False",
+            "description": "Tyrese Haliburton, Pascal Siakam, Rick Carlisle, Myles Turner, T.J. McConnell, Bennedict Mathurin, Aaron Nesmith, Andrew Nembhard and Obi Toppin spoke with the media after practice on Wednesday....",
+            "url": "https://www.youtube.com/watch?v=TZfcdMGhu80",
+            "duration": "PT49M56S",
+            "name": "Indiana Pacers NBA Finals Media Availability | June 18, 2025",
+            "width": "1280",
+            "regionsallowed": "AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CA,CC,CD,CF,CG,CH,CI,CK,CL,CM,CN,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH...",
+            "genre": "Sports",
+            "datepublished": "2025-06-18T11:05:28-07:00",
+            "thumbnailurl": "https://i.ytimg.com/vi/TZfcdMGhu80/maxresdefault.jpg",
+            "height": "720"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://i.ytimg.com/vi/TZfcdMGhu80/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBTkuQJ3NbA5_5eNsdklxm092O6Sg"
+          }
+        ],
+        "thing": [
+          {
+            "name": "Indiana Pacers"
+          }
+        ],
+        "listitem": [
+          {
+            "position": "1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "2025 NBA Finals schedule, odds, TV coverage: Pacers vs. Thunder ...",
+      "htmlTitle": "<b>2025 NBA</b> Finals schedule, odds, TV coverage: <b>Pacers</b> vs. Thunder ...",
+      "link": "https://www.cbssports.com/nba/news/2025-nba-finals-schedule-odds-tv-coverage-pacers-vs-thunder-game-times-dates-with-okc-up-3-2/",
+      "displayLink": "www.cbssports.com",
+      "snippet": "1 day ago ... 2025 NBA Finals schedule, odds, TV coverage: Pacers vs. Thunder game times, dates with OKC up 3-2. Brad Botkin. By Brad Botkin. -\u00a0...",
+      "htmlSnippet": "1 day ago <b>...</b> <b>2025 NBA</b> Finals schedule, odds, TV coverage: <b>Pacers</b> vs. Thunder game times, dates with OKC up 3-2. Brad Botkin. By Brad Botkin. -&nbsp;...",
+      "formattedUrl": "https://www.cbssports.com/nba/.../2025-nba-finals-schedule-odds-tv-covera...",
+      "htmlFormattedUrl": "https://www.cbssports.com/<b>nba</b>/.../<b>2025</b>-<b>nba</b>-finals-schedule-odds-tv-covera...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlcKZ4pK7nfoHixKkfoChv8U9rIc_BdEwUh4px3q83s0DTBGLwBmZmKg&s",
+            "width": "311",
+            "height": "162"
+          }
+        ],
+        "speakablespecification": [
+          {
+            "cssselector": ".article-headline"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://sportsfly.cbsistatic.com/fly-0980/bundles/sportsmediacss/images/fantasy/default-article-image-large.png",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "CBSSports.com",
+            "msapplication-tooltip": "CBSSports.com features live scoring and news for NFL football, MLB baseball, NBA basketball, NHL hockey, college basketball and football. CBSSports.com is also your source for fantasy sports news.",
+            "og:description": "Game 6 is set for Thursday night in Indianapolis",
+            "twitter:creator": "@cbssports",
+            "article:publisher": "https://www.facebook.com/cbssports",
+            "twitter:image": "https://sportsfly.cbsistatic.com/fly-0980/bundles/sportsmediacss/images/fantasy/default-article-image-large.png",
+            "twitter:site": "@cbssports",
+            "fb:admins": "100002967552623",
+            "article:content_tier": "free",
+            "twitter:account_id": "14885860",
+            "msapplication-starturl": "https://www.cbssports.com/",
+            "og:type": "article",
+            "twitter:title": "2025 NBA Finals schedule, odds, TV coverage: Pacers vs. Thunder game times, dates with OKC up 3-2 - CBSSports.com",
+            "msapplication-window": "width=1024;height=768",
+            "handheldfriendly": "True",
+            "og:title": "2025 NBA Finals schedule, odds, TV coverage: Pacers vs. Thunder game times, dates with OKC up 3-2",
+            "google": "notranslate",
+            "fb:pages": "25902406772",
+            "msapplication-navbutton-color": "#1483b2",
+            "fb:app_id": "297742330311988",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
+            "twitter:description": "Game 6 is set for Thursday night in Indianapolis",
+            "apple-mobile-web-app-capable": "yes",
+            "mobileoptimized": "320",
+            "og:url": "https://www.cbssports.com/nba/news/2025-nba-finals-schedule-odds-tv-coverage-pacers-vs-thunder-game-times-dates-with-okc-up-3-2/",
+            "google-play-app": "com.handmark.sportcaster",
+            "article:opinion": "false",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://sportsfly.cbsistatic.com/fly-0980/bundles/sportsmediacss/images/fantasy/default-article-image-large.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "2025 NBA Finals: Everything to watch for in colossal Game 6 - ESPN",
+      "htmlTitle": "<b>2025 NBA</b> Finals: Everything to watch for in colossal Game 6 - ESPN",
+      "link": "https://www.espn.com/nba/story/_/id/45532661/2025-nba-finals-watch-thunder-pacers-game-6",
+      "displayLink": "www.espn.com",
+      "snippet": "17 hours ago ... After a back-and-forth battle between the Oklahoma City Thunder and the Indiana Pacers, the 2025 NBA Finals are one step closer to crowning\u00a0...",
+      "htmlSnippet": "17 hours ago <b>...</b> After a back-and-forth battle between the Oklahoma City Thunder and the <b>Indiana Pacers</b>, the <b>2025 NBA</b> Finals are one step closer to crowning&nbsp;...",
+      "formattedUrl": "https://www.espn.com/nba/.../2025-nba-finals-watch-thunder-pacers-game-...",
+      "htmlFormattedUrl": "https://www.espn.com/<b>nba</b>/.../<b>2025</b>-<b>nba</b>-finals-watch-thunder-<b>pacers</b>-game-...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ge779Kd41tdTY8T9nAQa2e7oRK7jP_wMbcsQujC9lyEJFg0LNW5qVQ&s=0",
+            "width": "150",
+            "height": "84"
+          }
+        ],
+        "thumbnail": [
+          {
+            "src": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0618%2Fr1507954_2_1296x729_16%2D9.jpg",
+            "width": "1296",
+            "height": "729"
+          }
+        ],
+        "document": [
+          {
+            "title": "NBA Finals Game 6: How the the Thunder win it all and the Pacers force Game 7"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0618%2Fr1507954_2_1296x729_16%2D9.jpg",
+            "twitter:app:url:iphone": "sportscenter://x-callback-url/showStory?uid=45532661",
+            "twitter:app:id:googleplay": "com.espn.score_center",
+            "apple-itunes-app": "app-id=317469184, app-argument=sportscenter://x-callback-url/showStory?uid=45532661",
+            "og:image:width": "1296",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "ESPN.com",
+            "twitter:url": "https://www.espn.com/nba/story/_/id/45532661/2025-nba-finals-watch-thunder-pacers-game-6",
+            "twitter:app:name:googleplay": "ESPN",
+            "medium": "article",
+            "twitter:app:id:iphone": "317469184",
+            "title": "2025 NBA Finals: Everything to watch for in colossal Game 6 - ESPN",
+            "og:description": "NBA insiders answer the biggest questions and what to watch for heading into this massive Finals Game 6.",
+            "twitter:site": "espn",
+            "article:content_tier": "free",
+            "og:type": "article",
+            "twitter:title": "NBA Finals Game 6: How the the Thunder win it all and the Pacers force Game 7",
+            "og:title": "NBA Finals Game 6: How the the Thunder win it all and the Pacers force Game 7",
+            "og:image:height": "729",
+            "fb:pages": "104266592953439",
+            "dc.date.issued": "2025-06-18T11:00:00Z",
+            "referrer": "origin-when-cross-origin",
+            "fb:app_id": "116656161708917",
+            "twitter:app:url:googleplay": "sportscenter://x-callback-url/showStory?uid=45532661",
+            "viewport": "initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+            "twitter:description": "NBA insiders answer the biggest questions and what to watch for heading into this massive Finals Game 6.",
+            "og:url": "https://www.espn.com/nba/story/_/id/45532661/2025-nba-finals-watch-thunder-pacers-game-6",
+            "twitter:app:name:iphone": "ESPN",
+            "article:opinion": "false"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0618%2Fr1507954_2_1296x729_16%2D9.jpg"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "NFL",
+            "url": "NFL"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "NBA Finals 2025 - Thunder-Pacers news, schedule, scores and ...",
+      "htmlTitle": "<b>NBA</b> Finals <b>2025</b> - Thunder-<b>Pacers</b> news, schedule, scores and ...",
+      "link": "https://africa.espn.com/nba/story/_/id/44610574/nba-finals-2025-postseason-news-scores-highlights",
+      "displayLink": "africa.espn.com",
+      "snippet": "2 days ago ... NBA Finals 2025: Thunder-Pacers news, schedule, scores and highlights \u00b7 NBA FINALS \u00b7 (1) Oklahoma City Thunder lead the (4) Indiana Pacers 3-2.",
+      "htmlSnippet": "2 days ago <b>...</b> <b>NBA</b> Finals <b>2025</b>: Thunder-<b>Pacers</b> news, schedule, scores and highlights &middot; <b>NBA</b> FINALS &middot; (1) Oklahoma City Thunder lead the (4) <b>Indiana Pacers</b> 3-2.",
+      "formattedUrl": "https://africa.espn.com/nba/.../nba-finals-2025-postseason-news-scores-high...",
+      "htmlFormattedUrl": "https://africa.espn.com/<b>nba</b>/.../<b>nba</b>-finals-<b>2025</b>-postseason-news-scores-high...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5d_--BJSF_M-DgcP5Cp0KkFEy-PjvI2YP2EyqYUccCjDQtQaWoRx_Oe0&s=0",
+            "width": "150",
+            "height": "84"
+          }
+        ],
+        "thumbnail": [
+          {
+            "src": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0617%2Fr1507581_1296x729_16%2D9.jpg",
+            "width": "1296",
+            "height": "729"
+          }
+        ],
+        "document": [
+          {
+            "title": "NBA Finals 2025: Thunder-Pacers news, schedule, scores and highlights"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0617%2Fr1507581_1296x729_16%2D9.jpg",
+            "twitter:app:url:iphone": "sportscenter://x-callback-url/showStory?uid=44610574",
+            "twitter:app:id:googleplay": "com.espn.score_center",
+            "apple-itunes-app": "app-id=317469184, app-argument=sportscenter://x-callback-url/showStory?uid=44610574",
+            "og:image:width": "1296",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "ESPN.com",
+            "twitter:url": "https://africa.espn.com/nba/story/_/id/44610574/nba-finals-2025-postseason-news-scores-highlights",
+            "twitter:app:name:googleplay": "ESPN",
+            "medium": "article",
+            "twitter:app:id:iphone": "317469184",
+            "title": "NBA Finals 2025 - Thunder-Pacers news, schedule, scores and highlights - ESPN",
+            "og:description": "Here's everything you need to know about the 2025 NBA Finals, including scores, news and highlights.",
+            "twitter:site": "espn",
+            "article:content_tier": "free",
+            "og:type": "article",
+            "twitter:title": "NBA Finals 2025: Thunder-Pacers news, schedule, scores and highlights",
+            "og:title": "NBA Finals 2025: Thunder-Pacers news, schedule, scores and highlights",
+            "og:image:height": "729",
+            "fb:pages": "104266592953439",
+            "dc.date.issued": "2025-06-17T03:18:00Z",
+            "referrer": "origin-when-cross-origin",
+            "fb:app_id": "116656161708917",
+            "twitter:app:url:googleplay": "sportscenter://x-callback-url/showStory?uid=44610574",
+            "viewport": "initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+            "twitter:description": "Here's everything you need to know about the 2025 NBA Finals, including scores, news and highlights.",
+            "og:url": "https://africa.espn.com/nba/story/_/id/44610574/nba-finals-2025-postseason-news-scores-highlights",
+            "twitter:app:name:iphone": "ESPN",
+            "article:opinion": "false"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0617%2Fr1507581_1296x729_16%2D9.jpg"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "Football",
+            "url": "Football"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -24,8 +24,6 @@ Then, you will produce a concise, actionable intelligence report that assesses t
 - You MUST follow the two-step process: first fetch sources, then scrape and analyze. Do not provide a final answer until you have used both tools in sequence.
 - Your final assessment must be based solely on the scraped text. Do not use outside knowledge or the snippets from the initial API call.
 - The final output should be clearly labeled with "News Summary" and "Impact Assessment".
-
-
 """
 
 NewsCollectorAgent = LlmAgent(
