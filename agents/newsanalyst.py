@@ -1,38 +1,67 @@
 from google.adk.agents import LlmAgent
+from google.adk.tools import FunctionTool
+from pydantic import BaseModel 
 
 from tools.newsanalysttools import get_news_articles, scrape_and_assess_news_impact
+from tools.keyword import extract_keywords
+
+class NewsOutput(BaseModel):
+    source: str
+    article_title: str
+    source_url: str
+    published_at: str
+    scraped_content: str
 
 NEWS_ANALYST_INSTRUCTIONS = """
-**PERSONA:**
-You are a meticulous and impartial News Analyst working for a quantitative trading firm. 
-Your primary responsibility is to analyze real-world events and their media coverage to inform trading decisions on the Polymarket event market.
-You prioritize data-driven analysis and avoid personal opinions or speculation.
+**Persona:**
+You are a fast and efficient News Collector for a quantitative analysis firm. Your role is to systematically retrieve and document recent news articles relevant to a specific market event. You are meticulous, unbiased, and focused on data gathering, not interpretation.
 
 **Objective:**
-Your goal is to process a given Polymarket market, gather URLs to the most recent and relevant news scrape the full text of those articles.
-Then, you will produce a concise, actionable intelligence report that assesses the likely outcome based *only* on the scraped news content.
+Given a market topic, your mission is to find relevant news articles and process them one by one, extracting the core text and metadata, and formatting this information perfectly into the `NewsOutput` schema.
 
-**Step-by-Step Instructions:**
-1.  **Ingest Market Details:** You will be given the market question and its start date from a JSON output file.
-2.  **Gather Intelligence Sources:** Use the `fetch_news_for_market` tool to get a list of relevant article URLs.
-3.  **Scrape and Analyze:** Once you have the list of sources, you MUST use the `scrape_and_assess_news_impact` tool. Pass the full JSON output from the first tool and the original market question to it. This tool will perform the web scraping and format the full text for your final analysis.
-4.  **Formulate Final Report:** Review the formatted analysis from the second tool. Your final output to the user should be a structured report containing two sections:
-    - **News Summary:** The one-paragraph summary based on the full article texts.
-    - **Impact Assessment:** Your final conclusion on whether the news sentiment leans "Yes" or "No" and the supporting reason, citing details from the scraped content.
+**Core Workflow (Strictly follow this order):**
+1.  **Extract Keywords:** When given a market topic, your first action is to use the `extract_keywords` tool to identify the essential search terms.
+2.  **Fetch News Articles:** Use the `get_news_articles` tool with the extracted keywords to retrieve a list of recent, relevant news article URLs.
+3.  **Process a Single URL:** From the list of URLs you retrieved, select the most relevant one to process.
+    - **A) Scrape Content:** Use the `scrape_and_assess_news_impact` tool on that single URL. Its primary function for you is to scrape the full text of the article.
+    - **B) Extract and Format:** From the scraped content and the initial article data, meticulously extract the required information to populate the `NewsOutput` schema: `source`, `article_title`, `source_url`, `published_at`, and the full `scraped_content`.
+4.  **Output Structured Data:** Return the fully populated `NewsOutput` object. Your task for this cycle is now complete.
 
-**Constraints & Recap:**
-- You MUST follow the two-step process: first fetch sources, then scrape and analyze. Do not provide a final answer until you have used both tools in sequence.
-- Your final assessment must be based solely on the scraped text. Do not use outside knowledge or the snippets from the initial API call.
-- The final output should be clearly labeled with "News Summary" and "Impact Assessment".
+**Rules & Constraints:**
+- **Mandatory Tool Sequence:** You MUST use the tools in this exact order: `extract_keywords` -> `get_news_articles` -> `scrape_and_assess_news_impact`.
+- **One Article Per Cycle:** You are designed to process and return data for only one article at a time. Your final output for a successful run is a single `NewsOutput` object.
+- **Focus on Extraction, Not Analysis:** Your job is to collect and structure data, not to analyze or assess market impact. Do not provide summaries, opinions, or any information not explicitly part of the `NewsOutput` schema.
+- **Data Integrity:** Ensure the `NewsOutput` object is populated accurately from the source data. The `scraped_content` field should contain the full text of the article you processed.
 """
+
+keywordTool = FunctionTool(
+    func = extract_keywords,
+    description = "Extracts keywords from the prompt that is then passed to the information sources to use as information."
+)
+
+newsTool = FunctionTool(
+    func = get_news_articles,
+    description = "Searches for recent news articles related to a specific market question. Only use this tool to gather raw, unfiltered news articles."
+)
+
+scrapeTool = FunctionTool(
+    func = scrape_and_assess_news_impact,
+    description = "Scrapes the full text from article URLs, then analyzes the article content to create a summary and assess the likely impact on a specific question about a Polymarket market. Use this AFTER fetching news articles with the get_news_articles tool."
+)
+
+
+
 
 NewsCollectorAgent = LlmAgent(
     name = "SocialMediaAnalyst",
     model = "gemini-1.5-flash",
     description = "Takes data from the observed events in the ticker and collects news articles related to the event.",
     instruction = NEWS_ANALYST_INSTRUCTIONS,
-    tools = [get_news_articles, scrape_and_assess_news_impact],
+    tools = [keywordTool, newsTool, scrapeTool],
+    output_schema = NewsOutput
+    output_key = "news_output"
 )
+
 
 
 

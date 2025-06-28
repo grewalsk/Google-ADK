@@ -6,12 +6,13 @@ authors = [
     {name = "alshen12",email = "ashen006@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.13,<4"
+requires-python = "<3.14,>=3.9.10"
 dependencies = [
     "google-adk (>=1.1.1,<2.0.0)",
     "py-clob-client (>=0.23.0,<0.24.0)",
     "inquirer (>=3.4.0,<4.0.0)",
-    "bs4 (>=0.0.2,<0.0.3)"
+    "bs4 (>=0.0.2,<0.0.3)",
+    "spacy (>=3.8.7,<4.0.0)"
 ]
 
 

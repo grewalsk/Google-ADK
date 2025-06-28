@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import os
 import json
 from bs4 import BeautifulSoup
+import re
 
 load_dotenv()
 
@@ -16,22 +17,20 @@ with open (INPUT_FILENAME, 'r', encoding = 'utf-8') as f:
 
 # Might have to use paignation. 
 
-def get_news_articles():
+def get_news_articles(keywords: str):
     """
     Searches for recent news articles related to a specific market question.
     Only use this tool to gather raw, unfiltered news articles.
     """
 
-    market_question = selected_market['question']
-
-    print(f"Tool 'fetch_news_for_market' called with question: '{market_question}'")
+    print(f"Tool 'fetch_news_for_market' called with question: '{keywords}'")
 
     news_api_url = "https://api.thenewsapi.com/v1/news/top"
 
     date = selected_market['startDate'].split(".")[0]
 
     params = {
-        "search": market_question,
+        "search": keywords,
         "published_after": date,
         "api_token": NEWS_API_KEY,
         "language": "en",
@@ -98,7 +97,42 @@ def scrape_and_assess_news_impact(news_articles_json, market_question):
 
             article_body = soup.find('article') or soup.find('main')
 
-        except Exception as e: 
+            if article_body:
+                paragraphs = article.body.find_all('p')
+            
+            else:
+                paragraphs = soup.find_all('p')
+
+            full_text = " ".join([p.get_text() for p in paragraphs])
+
+            cleaned_text = re.sub(r'\s+', ' ', full_text).strip()
+
+        # Code below can be improved. 
+            context_block += f"Article {i+1} (Source: {article.get('source')}):\n"
+            context_block += f"Title: {article.get('title')}\n"
+            context_block += f"Full Text Summary: {cleaned_text[:1000]}...\n---\n" # TO avoid huge prompts
+
+        except Exception as e:
+            print(f"  > Failed to scrape or parse URL {url}: {e}")
+            # Add the snippet as a fallback if scraping fails
+            context_block += f"Article {i+1} (Source: {article.get('source')}, SCRAPE FAILED):\n"
+            context_block += f"Title: {article.get('title')}\n"
+            context_block += f"Snippet: {article.get('snippet')}\n---\n"
+
+    if not context_block:
+        return "Could not extract content from any of the provided article URLs."
+    
+    return f"""
+    **Analysis of Scraped News Content:**
+
+    **Market Context:** "{market_question}"
+
+    **Full Article Content Provided:**
+    {context_block}
+
+    **Assessment Task:**
+    Based on the FULL TEXT from the articles above, provide a neutral, one-paragraph summary. Then, state whether the collective news sentiment leans towards a "Yes" or "No" outcome for the market question, and briefly explain why, citing specifics from the text.
+    """
 
 
 

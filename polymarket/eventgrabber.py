@@ -9,6 +9,7 @@ event_limit = 100
 print(f"Fetching the latest {event_limit} events from Polymarket...")
 
 try:
+    
     params = {
         "active": "true",
         "closed": "false",
